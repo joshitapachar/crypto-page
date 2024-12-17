@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  const [inputValue, setInputValue] = useState("");
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#0a0a0a] text-white gap-10 p-6">
@@ -39,12 +39,13 @@ export default function Home() {
           priority
         /></span></div>
         </h1>
-        <a
+        <Link
   href="/dashboard"
   className="bg-[#6b46c1] text-white px-6 py-2 rounded-lg hover:bg-[#553c9a] transition"
 >
   Launch App 🚀
-</a>
+</Link>
+
 
       </section>
       <Image
