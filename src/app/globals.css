@@ -1,21 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer utilities {
+    @keyframes fall {
+        0% {
+            transform: translateY(-100vh) rotate(-20deg);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+    }
+    .animate-fall {
+        animation: fall 1.5s ease-out forwards;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+:root {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    @apply bg-[var(--background)] text-[var(--foreground)] font-sans;
 }
