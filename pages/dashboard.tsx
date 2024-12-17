@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import "../src/app/globals.css";
-
 export default function Dashboard() {
   const [inputValue, setInputValue] = useState<string>("");
 

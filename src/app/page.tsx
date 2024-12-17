@@ -28,7 +28,7 @@ export default function Home() {
           width={300}
           height={300}
           priority
-        />  isn't just a flex,
+        />  isnt just a flex,
         <div> it is a{" "}
           <span className="text-[#2563eb]"><Image
           src="/strategy.svg"
@@ -44,7 +44,6 @@ export default function Home() {
 >
   Launch App 🚀
 </Link>
-
 
       </section>
       <Image
